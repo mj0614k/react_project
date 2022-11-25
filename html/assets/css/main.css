@@ -1,0 +1,56 @@
+#main_page {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  padding-top: 40vh;
+  position: relative;
+}
+#main_page .space__man {
+  width: 59px;
+  height: 68px;
+  background: url("../img/spaceMan.png") no-repeat center / contain;
+  position: absolute;
+  top: 30vh;
+  right: 435px;
+}
+.birth__search {
+  font-family: "Gowun Batang";
+}
+.birth__search h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.search__inner {
+  width: 939px;
+  margin: 0 auto;
+  position: relative;
+}
+.search__inner input {
+  width: 100%;
+  height: 83px;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Gowun Batang";
+  font-weight: 400;
+  background: rgba(255, 255, 255, 0.17);
+  border-radius: 10px;
+  border: 0;
+}
+.search__inner input::placeholder {
+  font-family: "Gowun Batang";
+  color: #bababa;
+}
+.search__inner input::-webkit-search-cancel-button {
+  display: none;
+}
+.search__inner .icon {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: url("../img/search.svg") no-repeat center / cover;
+  cursor: pointer;
+}

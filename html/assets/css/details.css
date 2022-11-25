@@ -1,0 +1,64 @@
+.detail {
+  display: flex;
+  justify-content: space-between;
+}
+.detail__left {
+  width: 65%;
+}
+.detail__left .main__img {
+  margin-bottom: 50px;
+}
+.detail__left .sub__img {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.detail__left .sub__img a {
+  width: 24%;
+}
+.detail__left .sub__img a div {
+  width: 100%;
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.detail__right {
+  width: 30%;
+  position: relative;
+}
+.detail__right .detail__title {
+  color: #fff;
+  font-size: 32px;
+  line-height: 1.4;
+  font-family: "Rokkitt";
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.detail__right .detail__desc {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  font-family: "Rokkitt", sans-serif;
+}
+.detail__right .detail__info {
+  background-color: #f6f5fa;
+  color: #636363;
+  font-weight: 700;
+  border-radius: 10px;
+  position: absolute;
+  font-family: "Gowun Batang";
+  box-sizing: border-box;
+  padding: 30px 40px;
+  bottom: 0;
+  width: 383px;
+  height: 150px;
+  right: 0;
+}
+.detail__right .detail__info li {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.6;
+  font-size: 18px;
+}

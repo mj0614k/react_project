@@ -1,0 +1,27 @@
+#header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 20px 25px;
+    background: rgba(0, 0, 0, 0.5);
+}
+#header .logo {
+    font-size: 35px;
+    font-family: 'Gowun Batang';
+}
+.header__nav {}
+.header__nav ul {
+    display: flex;
+}
+.header__nav ul li {
+    margin: 0 70px;
+}
+.header__nav ul li a {
+    font-size: 20px;
+}

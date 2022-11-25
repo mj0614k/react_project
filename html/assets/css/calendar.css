@@ -1,0 +1,143 @@
+.bg__moon {
+  position: absolute;
+  top: -110px;
+  width: auto;
+  left: -145px;
+  z-index: -1;
+}
+.bg__astro {
+  width: auto;
+  position: absolute;
+  bottom: 110px;
+  right: 170px;
+  z-index: -1;
+}
+/* section calendar */
+.sec_cal {
+  font-family: "Bai Jamjuree";
+  max-width: 1030px;
+  margin: 0 auto;
+}
+.sec_cal .cal_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  color: #fff;
+  height: 95px;
+}
+
+.sec_cal .cal_nav .year-month {
+  width: 500px;
+  text-align: center;
+  line-height: 1;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.sec_cal .cal_nav .nav {
+  display: flex;
+  border: 1px solid #333333;
+  border-radius: 5px;
+}
+
+.sec_cal .cal_nav .go-prev,
+.sec_cal .cal_nav .go-next {
+  display: block;
+  width: 50px;
+  height: 78px;
+  font-size: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec_cal .cal_nav .go-prev::before,
+.sec_cal .cal_nav .go-next::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 3px solid #fff;
+  border-width: 3px 3px 0 0;
+  transition: border 0.1s;
+}
+
+.sec_cal .cal_nav .go-prev:hover::before,
+.sec_cal .cal_nav .go-next:hover::before {
+  border-color: rgb(190, 190, 190);
+}
+
+.sec_cal .cal_nav .go-prev::before {
+  transform: rotate(-135deg);
+}
+
+.sec_cal .cal_nav .go-next::before {
+  transform: rotate(45deg);
+}
+
+.sec_cal .cal_wrap {
+  position: relative;
+}
+
+.sec_cal .cal_wrap .days {
+  display: flex;
+}
+
+.sec_cal .cal_wrap::after {
+  top: 368px;
+}
+
+.sec_cal .cal_wrap .day {
+  width: calc(100% / 7);
+  margin-bottom: 50px;
+  text-align: left;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+/* .current.today {
+    background: rgb(242 242 242);
+  } */
+
+.sec_cal .cal_wrap .dates {
+  display: flex;
+  flex-flow: wrap;
+}
+.sec_cal .cal_wrap .dates .day.current {
+  text-align: left;
+  font-size: 12px;
+  margin-bottom: 0px;
+  box-sizing: border-box;
+  padding: 10px;
+  font-weight: 300;
+  height: 120px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sec_cal .cal_wrap .dates .day.current:nth-child(1) {
+  background-image: url(assets/img/calendar_01.jpg);
+}
+.sec_cal .cal_wrap .dates .day.current:nth-child(2) {
+  background-image: url(assets/img/calendar_02.jpg);
+}
+.sec_cal .cal_wrap .dates .day.current:nth-child(3) {
+  background-image: url(assets/img/calendar_03.jpg);
+}
+.sec_cal .cal_wrap .dates .day.current:nth-child(4) {
+  background-image: url(assets/img/calendar_04.jpg);
+}
+.sec_cal .cal_wrap .dates .day.current:nth-child(5) {
+  background-image: url(assets/img/calendar_05.jpg);
+}
+.sec_cal .cal_wrap .dates .day.current:nth-child(6) {
+  background-image: url(assets/img/calendar_06.jpg);
+}
+.sec_cal .cal_wrap .dates,
+.sec_cal .cal_wrap .day.disable {
+  font-size: 0;
+}

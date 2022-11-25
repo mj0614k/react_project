@@ -1,0 +1,76 @@
+#image__page {
+}
+
+/* banner */
+.banner {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+  background: url(../img/imgBg-min.jpg) no-repeat center / contain;
+}
+.img__search__inner {
+  position: absolute;
+  bottom: 240px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.search__title {
+  font-family: "Rokkitt";
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: -0.05em;
+}
+.search__box {
+  position: relative;
+}
+.search__input {
+  width: 736px;
+  height: 60px;
+  background: #fff;
+  color: #000;
+  border: 0;
+  padding: 5px 70px 5px 30px;
+  font-size: 20px;
+  font-family: "Gowun Batang";
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+.search__input::placeholder {
+  font-family: "Gowun Batang";
+}
+.search__btn__moon {
+  width: 50px;
+  height: 50px;
+  background: url(../img/searchMoon.png) no-repeat center / cover;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+/* img__contents */
+.img__contents.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.img__inner {
+  column-count: 4;
+  column-gap: 20px;
+  width: 100%;
+}
+.img__inner li {
+  margin-bottom: 20px;
+}
+.img__inner li a {
+}
+.img__inner li a img {
+}
