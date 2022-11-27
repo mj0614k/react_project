@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const HeaderCont = () => {
+const Header = () => {
   return (
     <header id="header">
       <div className="header__inner">
@@ -11,13 +11,13 @@ const HeaderCont = () => {
         <nav className="header__nav">
           <ul>
             <li>
-              <Link to="/">SPECIAL</Link>
+              <Link to="/special">SPECIAL</Link>
             </li>
             <li>
-              <Link to="/">IMAGE</Link>
+              <Link to="/image">IMAGE</Link>
             </li>
             <li>
-              <Link to="/">VIDEO</Link>
+              <Link to="/video">VIDEO</Link>
             </li>
             <li>
               <Link to="/calendar">CALENDAR</Link>
@@ -29,4 +29,4 @@ const HeaderCont = () => {
   );
 };
 
-export default HeaderCont;
+export default Header;

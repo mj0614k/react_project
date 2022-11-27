@@ -1,3 +1,9 @@
+.bg {
+  /* background: url(../img/mainBg-min.jpg) no-repeat center / cover; */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
 #main_page {
   text-align: center;
   background: rgba(0, 0, 0, 0.5);
@@ -12,6 +18,7 @@
   position: absolute;
   top: 30vh;
   right: 435px;
+  animation: shakeY 5s infinite;
 }
 .birth__search {
   font-family: "Gowun Batang";
@@ -53,4 +60,15 @@
   right: 30px;
   background: url("../img/search.svg") no-repeat center / cover;
   cursor: pointer;
+}
+
+@keyframes shakeY {
+  from,
+  to {
+    transform: translateY(-10px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
 }

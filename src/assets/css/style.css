@@ -8,10 +8,14 @@
 /* header */
 @import "header.css";
 
+/* loader */
+@import "loader.css";
+
 /* main */
 @import "main.css";
 
 /* cont */
+@import "searchCont.css";
 @import "imagePage.css";
 @import "videoPage.css";
 @import "calendar.css";

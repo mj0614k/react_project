@@ -1,9 +1,24 @@
 import React from "react";
-import CalendarMoon from "../assets/img/calendar_bg01.png";
-import CalendarAstro from "../assets/img/calendar_bg02.png";
+import { useState, useEffect } from "react";
+import Header from "../layout/Header";
+// import Loader from "../layout/Loader";
+import CalendarMoon from "../../assets/img/calendar_bg01.png";
+import CalendarAstro from "../../assets/img/calendar_bg02.png";
 import $ from "jquery";
 
 const Calendar = () => {
+  const [images, setImages] = useState([]);
+
+  useEffect(() => {
+    fetch(
+      "https://api.nasa.gov/planetary/apod?start_date=2022-11-01&api_key=DEMO_KEY&end_date="
+    )
+      .then((response) => response.json())
+      // .then((result) => console.log(result.collection.items))
+      .then((result) => setImages(result))
+      .catch((error) => console.log("error", error));
+  }, []);
+
   function calendarInit() {
     // 날짜 정보 가져오기
     let date = new Date(); // 현재 날짜(로컬 기준) 가져오기
@@ -89,8 +104,11 @@ const Calendar = () => {
     calendarInit();
   });
 
+  // if (!images?.length) return <Loader />;
+
   return (
     <>
+      <Header />
       <img className="bg__moon" src={CalendarMoon} alt="달 이미지" />
       <img className="bg__astro" src={CalendarAstro} alt="우주인 이미지" />
       <main className="container">
