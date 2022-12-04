@@ -26,9 +26,6 @@ const VideoDetails = () => {
   //   })
   // console.log(video);
   // if (!image?.length) return <Loader />;
-
-  //images-assets.nasa.gov/video/KSC-20190828-VP-MMS01-0001-Tom_Joyner_Explores_Moon_to_Mars_Master-3229627/KSC-20190828-VP-MMS01-0001-Tom_Joyner_Explores_Moon_to_Mars_Master-3229627~orig.mp4
-  //images-assets.nasa.gov/video/KSC-20190828-VP-MMS01-0001-Tom_Joyner_Explores_Moon_to_Mars_Master-3229627_Tom Joyner Explores Moon to Mars/KSC-20190828-VP-MMS01-0001-Tom_Joyner_Explores_Moon_to_Mars_Master-3229627_Tom Joyner Explores Moon to Mars~orig.mp4
   return (
     <>
       <Header />

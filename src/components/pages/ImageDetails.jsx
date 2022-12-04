@@ -7,12 +7,13 @@ const ImageDetails = () => {
   const [image, setImage] = useState([]);
   const { imageId } = useParams();
   const [random, setRandom] = useState([]);
+  const colon = "&#58;"
 
   useEffect(() => {
-    fetch(`http://images-api.nasa.gov/search?q=Herschel%20Space%20Observatory&media_type=image&nasa_id=${imageId}`)
+    fetch(`https://images-assets.nasa.gov/image/${imageId}/metadata.json`)
       .then((response) => response.json())
       // .then((result) => setImages(result.collection.items[0].data[0]))
-      .then((result) => setImage(result?.collection?.items[0]))
+      .then((result) => console.log(result))
       // then((result) => console.log(result.collection.items[0]))
       .catch((error) => console.log("error", error));
   }, []);
@@ -24,7 +25,7 @@ const ImageDetails = () => {
       .catch((error) => console.log("error", error));
   }, []);
 
-  console.log(random);
+  // console.log(random);
   if (!random?.length) return <Loader />;
 
   return (
@@ -55,7 +56,7 @@ const ImageDetails = () => {
           </div>
           <div className="detail__right">
             <h2 className="detail__title">{image?.data?.[0]?.title}</h2>
-            <p className="detail__desc">{image?.data?.[0]?.description}</p>
+            <p className="detail__desc">{image?.ImageDescription}</p>
             <div className="detail__info">
               <li>
                 <span>ID : </span>
